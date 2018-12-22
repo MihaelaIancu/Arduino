@@ -18,6 +18,7 @@
 * Fire de conexiune
 
 **Instructiuni:**
+
 Folosind joystick-ul, jucatorul trebuie sa miste masina (conturata aprinzand 4 led-uri pe matrice, de forma unui patrat) astfel incat sa se fereasca de obstacole. Obstacolele reprezinta puncte (1 punct, 1 led) animate pe matrice. Jocul are 3 viteze, fiecare viteza va fi setata folosind butonul, astfel:
 * prima apasare -> prima viteza
 * a 2a apasare -> a doua viteza: obstacolele se deplaseaza mai repede si jucatorul trebuie sa miste masina mult mai repede
