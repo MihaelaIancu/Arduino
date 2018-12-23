@@ -28,7 +28,7 @@ Folosind joystick-ul, jucatorul trebuie sa miste masina (conturata aprinzand 4 l
 
 Pe LCD vor fi afisate:
 * numele jocului: RACING GAME
-* instructiunile de joc (la care se ajunge apasand butonul)
+* instructiunile de joc (apar la putin timp dupa afisarea numelui jocului)
 * mesajul SA INCEAPA JOCUL, care specifica faptul ca jucatorul poate incepe sa isi seteze viteza si sa joace.
 * vitezele : SPEED UP 1, SPEED UP 2, SPEED UP 3;
 
