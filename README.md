@@ -33,3 +33,5 @@ Pe LCD vor fi afisate:
 * vitezele : SPEED UP 1, SPEED UP 2, SPEED UP 3;
 
 Pe matrice vor fi afisate led-urile necesare jocului, precum si litera P necesara in momentul de pauza al jocului.
+
+Link cu video-ul jocului: https://youtu.be/oou5uahNmHs
