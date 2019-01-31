@@ -1,0 +1,50 @@
+#define PIN_A 8
+#define PIN_B 7
+#define PIN_C 5
+#define PIN_D 4
+#define PIN_E 3
+#define PIN_F 9
+#define PIN_G 10
+#define PIN_BTN 6
+
+int segments[7] = {PIN_A, PIN_B, PIN_C, PIN_D, PIN_E, PIN_F, PIN_G};
+byte matrix_digit[10][7] = {{1, 1, 1, 1, 1, 1, 0},
+                            {0, 1, 1, 0, 0, 0, 0},
+                            {1, 1, 0, 1, 1, 0, 1},
+                            {1, 1, 1, 1, 0, 0, 1},
+                            {0, 1, 1, 0, 0, 1, 1},
+                            {1, 0, 1, 1, 0, 1, 1},
+                            {1, 0, 1, 1, 1, 1, 1},
+                            {1, 1, 1, 0, 0, 0, 0},
+                            {1, 1, 1, 1, 1, 1, 1},
+                            {1, 1, 1, 1, 0, 1, 1}
+};
+
+void display_digit(byte digit)
+{
+  for(int count = 0; count < 7; count++)
+  {
+    digitalWrite(segments[count], matrix_digit[digit][count]);
+  }
+}
+                             
+void setup() {
+  // put your setup code here, to run once:
+pinMode(PIN_A, OUTPUT);
+pinMode(PIN_B, OUTPUT);
+pinMode(PIN_C, OUTPUT);
+pinMode(PIN_D, OUTPUT);
+pinMode(PIN_E, OUTPUT);
+pinMode(PIN_F, OUTPUT);
+pinMode(PIN_G, OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+//for(int i = 9; i>=0; i--) in sens invers
+for(byte i = 0; i<=0; i++)
+{
+  display_digit(i);
+  delay(1000);
+}
+}
