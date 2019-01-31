@@ -1,0 +1,23 @@
+#define LED_ALBASTRU 10
+#define POT A5
+int valPot = 0;
+int valMap = 0;
+
+void setup() {
+  // put your setup code here, to run once:
+
+  pinMode(LED_ALBASTRU, OUTPUT); //de tip output pt ca iese, trimit semnale luminoase prin aprinderea led-ului
+  pinMode(POT, INPUT); //trimit informatia pt ca invart de el
+  Serial.begin(9600); //intra intr-o fereastra in care imi afiseaza valori
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+  valPot = analogRead(POT); //citeste valori intre 0-1023; intervalul acesta trebuie sa rezulte d.p cu intervalul de mai jos; 255-1023 = intensitate maxima; in concluzie, trebuie redus primul interval la cel de-al doilea
+  valMap = map(valPot, 0, 1023, 0, 255); //reducerea intervalului: 0 il reprezint cu 0; 1023 il reprezint cu 255
+  analogWrite(LED_ALBASTRU, valMap); //valori intre 0-255
+}
+
+//invart din potentiometru si setez efectul de "fade" asupra led-ului
