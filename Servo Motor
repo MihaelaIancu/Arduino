@@ -1,0 +1,23 @@
+#define SERVO_PIN 4
+#include <Servo.h>
+
+Servo myServo;
+void setup() {
+  // put your setup code here, to run once:
+myServo.attach(SERVO_PIN);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+for(int i=0; i<=180; i+=10)
+{
+  myServo.write(i);
+  delay(100);//ms
+}
+for(int i=180; i>=0; i-=10)
+{
+  myServo.write(i);
+  delay(100);//ms
+}
+}
