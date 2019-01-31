@@ -34,6 +34,6 @@ Pe LCD vor fi afisate:
 
 Pe matrice vor fi afisate led-urile necesare jocului, precum si litera P necesara in momentul de pauza al jocului.
 
-**Codul jocului se gasest in:** animation.ino
+**Codul jocului se gaseste in:** animation.ino
 
 **Link cu video-ul jocului:** https://youtu.be/oou5uahNmHs
