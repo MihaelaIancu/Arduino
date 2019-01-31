@@ -1,0 +1,18 @@
+
+#define LED_ALBASTRU 10
+
+void setup() {
+  // put your setup code here, to run once:
+
+  pinMode(LED_ALBASTRU, OUTPUT); //de tip output pt ca iese, trimit semnale
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+  digitalWrite(LED_ALBASTRU, HIGH);
+  delay(1000); //msec; timp de o sec lumineaza
+  digitalWrite(LED_ALBASTRU, LOW);
+  delay(1000); 
+
+}
