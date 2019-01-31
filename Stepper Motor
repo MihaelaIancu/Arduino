@@ -1,0 +1,39 @@
+
+#define STEPPER_PIN1 8//IN1 driver
+#define STEPPER_PIN2 9//IN2 driver
+#define STEPPER_PIN3 10
+#define STEPPER_PIN4 11
+
+void setup() {
+  // put your setup code here, to run once:
+
+  pinMode(STEPPER_PIN1, OUTPUT);
+  pinMode(STEPPER_PIN2, OUTPUT);
+  pinMode(STEPPER_PIN3, OUTPUT);
+  pinMode(STEPPER_PIN4, OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+  digitalWrite(STEPPER_PIN1, HIGH);
+  digitalWrite(STEPPER_PIN2, LOW);
+  digitalWrite(STEPPER_PIN3, LOW);
+  digitalWrite(STEPPER_PIN4, LOW);
+  delay(100);
+  digitalWrite(STEPPER_PIN1, LOW);
+  digitalWrite(STEPPER_PIN2, HIGH);
+  digitalWrite(STEPPER_PIN3, LOW);
+  digitalWrite(STEPPER_PIN4, LOW);
+  delay(100);
+  digitalWrite(STEPPER_PIN1, LOW);
+  digitalWrite(STEPPER_PIN2, LOW);
+  digitalWrite(STEPPER_PIN3, HIGH);
+  digitalWrite(STEPPER_PIN4, LOW);
+  delay(100);
+  digitalWrite(STEPPER_PIN1, LOW);
+  digitalWrite(STEPPER_PIN2, LOW);
+  digitalWrite(STEPPER_PIN3, LOW);
+  digitalWrite(STEPPER_PIN4, HIGH);
+  delay(100);
+}
